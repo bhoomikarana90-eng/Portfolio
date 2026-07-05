@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#hero {
+    background: linear-gradient(135deg, #121212 0%, #1c281f 100%) !important;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    font-size: 0.9rem;
+}

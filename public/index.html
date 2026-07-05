@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoomika Rana | Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">BHOOMIKA RANA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-dark text-white text-center d-flex align-items-center" style="min-height: 90vh;">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Hi, I'm <span class="text-success">Bhoomika Rana</span></h1>
+            <p class="lead text-muted my-4">B.Tech Artificial Intelligence & Data Science Undergraduate</p>
+            <p class="mx-auto" style="max-width: 600px;">An enthusiastic software developer and competitive programmer passionate about solving real-world problems through technology.</p>
+            <a href="#projects" class="btn btn-success btn-lg mt-3 me-2">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg mt-3">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">About Me & <span class="text-success">Skills</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h4 class="fw-bold"><i class="fa-solid fa-graduation-cap text-success me-2"></i> Education</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-3">
+                            <strong>Chandigarh Engineering College, Jhanjeri</strong><br>
+                            <span class="text-muted">B.Tech AI & Data Science (2024 - 2028) | Pursuing</span>
+                        </li>
+                        <li class="mb-3">
+                            <strong>Mukat Public School, Rajpura</strong><br>
+                            <span class="text-muted">12th CBSE | Percentage: 77%</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fw-bold"><i class="fa-solid fa-code text-success me-2"></i> Technical Core</h4>
+                    <div class="mb-3 mt-3">
+                        <span class="badge bg-dark p-2 m-1">C++</span>
+                        <span class="badge bg-dark p-2 m-1">Python</span>
+                        <span class="badge bg-dark p-2 m-1">Java (Familiar)</span>
+                        <span class="badge bg-dark p-2 m-1">Data Structures & Algorithms</span>
+                        <span class="badge bg-dark p-2 m-1">Artificial Intelligence</span>
+                    </div>
+                    <h4 class="fw-bold mt-4"><i class="fa-solid fa-wrench text-success me-2"></i> Developer Tools</h4>
+                    <div>
+                        <span class="badge bg-secondary p-2 m-1">VS Code</span>
+                        <span class="badge bg-secondary p-2 m-1">Git</span>
+                        <span class="badge bg-secondary p-2 m-1">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-3">My Training <span class="text-success">Portfolio</span></h2>
+            <p class="text-center text-muted mb-5">A comprehensive look at the major projects and practical mini-applications built during summer training.</p>
+            
+            <!-- Category Filter Buttons -->
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" id="filter-buttons">
+                <button class="btn btn-success filter-btn active" data-filter="all">All Projects</button>
+                <button class="btn btn-outline-dark filter-btn" data-filter="major">Major AI Builds</button>
+                <button class="btn btn-outline-dark filter-btn" data-filter="utility">Utilities & Tools</button>
+                <button class="btn btn-outline-dark filter-btn" data-filter="games">JS Games</button>
+                <button class="btn btn-outline-dark filter-btn" data-filter="ecomm">E-Commerce & Management</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4" id="projects-grid">
+                
+                <!-- MAJOR: AutoMed Care -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="major">
+                    <div class="card h-100 border-0 shadow-sm border-top border-success border-3">
+                        <div class="card-body">
+                            <div class="text-success mb-2"><i class="fa-solid fa-robot fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">AutoMed Care</h5>
+                            <p class="card-text text-muted small">An elderly-friendly assistant tracking medicine reminders from prescription images using Google Gemini.</p>
+                            <span class="badge bg-dark-subtle text-dark mb-1">Gemini AI</span>
+                            <span class="badge bg-dark-subtle text-dark mb-1">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAJOR: Adaptive Traffic Signal -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="major">
+                    <div class="card h-100 border-0 shadow-sm border-top border-success border-3">
+                        <div class="card-body">
+                            <div class="text-success mb-2"><i class="fa-solid fa-traffic-light fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Adaptive Traffic Light</h5>
+                            <p class="card-text text-muted small">Smart traffic infrastructure optimizing signal delay periods adaptively through real-time density logic.</p>
+                            <span class="badge bg-dark-subtle text-dark mb-1">Python</span>
+                            <span class="badge bg-dark-subtle text-dark mb-1">AI Logic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTILITY: Weather API -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="utility">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary mb-2"><i class="fa-solid fa-cloud-sun fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Weather API App</h5>
+                            <p class="card-text text-muted small">Fetches live meteorological updates dynamically utilizing asynchronous REST API integrations.</p>
+                            <span class="badge bg-secondary-subtle text-dark">JavaScript</span>
+                            <span class="badge bg-secondary-subtle text-dark">Fetch API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTILITY: Currency Converter -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="utility">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary mb-2"><i class="fa-solid fa-money-bill-transfer fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Currency Converter</h5>
+                            <p class="card-text text-muted small">Performs quick global currency conversion processing using live updated foreign exchange API keys.</p>
+                            <span class="badge bg-secondary-subtle text-dark">JS Async</span>
+                            <span class="badge bg-secondary-subtle text-dark">JSON</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTILITY: QR Code Generator -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="utility">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary mb-2"><i class="fa-solid fa-qrcode fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">QR Code Generator</h5>
+                            <p class="card-text text-muted small">Translates plaintext URLs and raw user input messages instantly into scannable graphic QR items.</p>
+                            <span class="badge bg-secondary-subtle text-dark">DOM API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTILITY: Sentence Translator -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="utility">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary mb-2"><i class="fa-solid fa-language fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Sentence Translator</h5>
+                            <p class="card-text text-muted small">A localized application allowing users to input blocks of text for multi-lingual translation translation tasks.</p>
+                            <span class="badge bg-secondary-subtle text-dark">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ECOMM: E-Commerce Cart -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="ecomm">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-info mb-2"><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">E-Commerce Cart</h5>
+                            <p class="card-text text-muted small">Tracks interactive client purchases, managing live calculation tallies, adding/dropping quantities.</p>
+                            <span class="badge bg-secondary-subtle text-dark">Array Methods</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ECOMM: Library Management -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="ecomm">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-info mb-2"><i class="fa-solid fa-book fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Library Management</h5>
+                            <p class="card-text text-muted small">Maintains collections records to systematically log, search, check-in, and audit borrowed text inventories.</p>
+                            <span class="badge bg-secondary-subtle text-dark">CRUD Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GAMES: Snake Game -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="games">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-warning mb-2"><i class="fa-solid fa-gamepad fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Retro Snake Game</h5>
+                            <p class="card-text text-muted small">Classic 2D matrix layout arcade module relying on strict directional key capture logic loops.</p>
+                            <span class="badge bg-secondary-subtle text-dark">HTML5 Canvas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GAMES: Rock Paper Scissors -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="games">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-warning mb-2"><i class="fa-solid fa-hand-fist fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Rock Paper Scissors</h5>
+                            <p class="card-text text-muted small">An interactive match matrix computing randomized AI picks to score rounds against players.</p>
+                            <span class="badge bg-secondary-subtle text-dark">Math Objects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTILITY: Expense Tracker -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="utility">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary mb-2"><i class="fa-solid fa-wallet fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Expense Tracker</h5>
+                            <p class="card-text text-muted small">Features transaction item listings calculating balance, income, and dynamic budgeting lists.</p>
+                            <span class="badge bg-secondary-subtle text-dark">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTILITY: More Dashboard Tools (Collapsed for tidiness) -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="utility">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary mb-2"><i class="fa-solid fa-sliders fa-xl"></i></div>
+                            <h5 class="card-title fw-bold">Core Web Utilities</h5>
+                            <p class="card-text text-muted small">Includes: To-Do Lists, Student Registration UI forms, Multiplication Grid Engine, Digital Clock, and ATM State Simulator.</p>
+                            <span class="badge bg-secondary-subtle text-dark">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Experience & <span class="text-success">Milestones</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded text-center shadow-sm h-100">
+                        <i class="fa-solid fa-trophy text-warning fa-2x mb-3"></i>
+                        <h5>GenAI Hackathon</h5>
+                        <p class="text-muted small">Organized by ML Chandigarh & Google for Developers. Built real-world AI builds in a rigorous 24-hour setup.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded text-center shadow-sm h-100">
+                        <i class="fa-solid fa-microphone-lines text-primary fa-2x mb-3"></i>
+                        <h5>Public Speaking & Debate</h5>
+                        <p class="text-muted small">Secured 3rd Position in Debate Competition. Passionate about anchoring and active communication.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded text-center shadow-sm h-100">
+                        <i class="fa-solid fa-medal text-danger fa-2x mb-3"></i>
+                        <h5>Sports Milestones</h5>
+                        <p class="text-muted small">Zonal Silver Medalist in Volleyball and Bronze Medalist in 400m Athletics track events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container" style="max-width: 600px;">
+            <h2 class="text-center fw-bold mb-4">Get In <span class="text-success">Touch</span></h2>
+            <p class="text-center text-muted">Have a question or want to collaborate on an AI project? Drop a message!</p>
+            
+            <form id="contactForm" class="mt-4">
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-secondary text-white border-0" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control bg-secondary text-white border-0" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control bg-secondary text-white border-0" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100 py-2">Send Message</button>
+            </form>
+            <div id="formResponse" class="mt-3 text-center"></div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 Bundle JS -->
+<script src="https://jsdelivr.net"></script>
+<script>
+    // Frontend JS to handle async submission to your Node backend
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const responseDiv = document.getElementById('formResponse');
+        
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+
+        try {
+            const res = await fetch('/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            const data = await res.json();
+            if(data.success) {
+                responseDiv.innerHTML = `<span class="text-success">${data.msg}</span>`;
+                document.getElementById('contactForm').reset();
+            }
+        } catch (err) {
+            responseDiv.innerHTML = `<span class="text-danger">Oops! Something went wrong.</span>`;
+        }
+    });
+
+    // Safe Filter Logic with Smooth Fade Animations
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const currentActive = document.querySelector('.filter-btn.active');
+            
+            if (currentActive) {
+                currentActive.classList.remove('active', 'btn-success');
+                currentActive.classList.add('btn-outline-dark');
+            }
+            
+            button.classList.remove('btn-outline-dark');
+            button.classList.add('active', 'btn-success');
+            
+            const filterValue = button.getAttribute('data-filter');
+            
+            projectItems.forEach(item => {
+                // Remove existing animation properties to reset them
+                item.style.opacity = '0';
+                item.style.transform = 'scale(0.95)';
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    item.style.display = 'block';
+                    // Trigger a brief timeout so the browser registers the display switch before animating
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
